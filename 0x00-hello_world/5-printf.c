@@ -1,10 +1,11 @@
 #include <stdio.h>
 /**
- * Description: main - Prints out a string to stdout.
- * Return: 0 if success
+ * main - entry point for the program
+ *
+ * Return: 0 success
  */
 int main(void)
 {
-	prinf("with proper grammar, butthe outcome is a piece of art, \n");
+	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
 }
