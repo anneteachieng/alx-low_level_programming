@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- * ptint_sign - print the sign of a num
- * @n: the num to be checked for
- * Return 1 and prints + if greater than zero
- * 0 and prints 0 if n is zero
- * -1 and prints - if less than zero
+ * print_sign - print the sign of a num
+ * @n: argument passed
+ * Return: 1, 0 -1
  */
 
 int print_sign(int n)
@@ -22,7 +20,7 @@ int print_sign(int n)
 	}
 	else
 	{
-		_putchar( '-');
+		_putchar('-');
 		return (-1);
 	}
 }
