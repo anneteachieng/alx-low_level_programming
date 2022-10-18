@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * print_sign - prints the sign of a number
- * @n: the number of the sign to be printed
- * Return: 1 if number is greter than zero
- * 0 if number is zero
- * -1 if number is less than zero
+ * ptint_sign - print the sign of a num
+ * @n: the num to be checked for
+ * Return 1 and prints + if greater than zero
+ * 0 and prints 0 if n is zero
+ * -1 and prints - if less than zero
  */
+
 int print_sign(int n)
 {
 	if (n > 0)
@@ -16,12 +17,12 @@ int print_sign(int n)
 	}
 	else if (n == 0)
 	{
-		_putchar('0);
+		_putchar('0');
 		return (0);
 	}
 	else
 	{
-		_putchar( ' - ');
+		_putchar( '-');
 		return (-1);
 	}
 }
