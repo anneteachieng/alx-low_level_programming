@@ -3,15 +3,18 @@
 /**
  * print_alphabet_x10 - prints alpha 10 times
  */
-void print_alphabet_x10(void)
-{
-	int ten;
-	char la;
 
-	for (ten = 0; ten <= 9; ten++)
+void print_alphabet_x10(void);
+{
+	int j;
+	int x;
+
+	for (x = 0; x < 10; x++)
 	{
-		for (la = 'a'; la <= 'z'; la++)
-			_putchar(la)
-				_putchar('\n');
+		for (j = 'a'; j <= 'z'; j++)
+		{
+			_putchar(j)
+		}
+		_putchar('\n');
 	}
 }
