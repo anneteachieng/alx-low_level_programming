@@ -1,9 +1,10 @@
-#include <stdio.h>
-#include "main.h"
+#include "holberton.h"
+
 /**
  * mul - gives product of two integers
  * @a: first integer
  * @b: second integer
+ *
  * Return: a * b
  */
 
