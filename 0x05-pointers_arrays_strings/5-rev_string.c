@@ -8,14 +8,22 @@
 
 void rev_string(char *s)
 {
-	int 1, i;
-	char ch;
+	int i, max, half;
+	char first, last;
 
-	/*find string length without null char*/
-	for (i = 0; i < 1 / 2; ++i)
+	i = 0;
+	while (s[i] != '\0')
 	{
-		ch = s[i];
-		s[i] = s[l - 1 - i]; /*-1 because the array starts from 0*/
-		s[l - 1 - i] = ch;
+		i++;
+	}
+	max = i - 1;
+	half = max / 2;
+	while (half >= 0)
+	{
+		first = s[max - half];
+		last = s[half];
+		s[half] = first;
+		s[max - half] = last;
+		half--;
 	}
 }
