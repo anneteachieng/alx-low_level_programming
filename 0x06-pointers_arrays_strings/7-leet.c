@@ -1,18 +1,37 @@
 #include "main.h"
 
 /**
- * main - check the code for ALX School students
- * Return: always 0
+ * leet - a function that encodes a string into 1337
+ * @s: string
+ * Return: @s
  */
 
-int main(void)
+char *leet(char *s)
 {
-	char s[] = "Expect the best, Prepare to the worst,
-		Capitalize on what comes.\n";
-	char *p;
+	int i, c = 0;
+	int sl[] = {97, 101, 111, 116, 108};
+	int ul[] = {65, 69, 79, 84, 76};
+	int n[] = {52, 51, 48, 55, 49};
 
-	p = leet(s);
-	printf("%s", p);
-	printf("%s", s);
-	return (0);
+	/*iterate values in array s*/
+	while (s[c] != '\0')
+	{
+		/**
+		 * loop through array value five times
+		 * to check if value is equal to
+		 * any small letter in array sl or
+		 * upper letter in ul and if it
+		 * is replace with valouof array n
+		 */
+		for (i = 0; i < 5; i++)
+		{
+			if (s[c] == sl[i] || s[c] == ul[i])
+			{
+				s[c] = n[i];
+				break;
+			}
+		}
+		c++;
+	}
+	return (s);
 }
