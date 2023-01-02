@@ -5,14 +5,12 @@
  * @s: string
  * Return: length
  */
+
 int _strlen(char*s)
 {
-	int longi = 0;
+	int i;
 
-	while (*s != '\0')
-	{
-		longi++;
-		s++;
-	}
-	return (longi);
+	for (i = 0; s[i] != '\0';)
+		i++;
+	return (i);
 }
