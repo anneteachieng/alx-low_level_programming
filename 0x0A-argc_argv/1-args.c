@@ -7,9 +7,15 @@
  * @argv: argument array
  * Return: If successful 0 always
  */
-int main(int argc, char *argv[])
+int main(int argc, char __attribute__((unused)) *argv[])
 {
-	(void) argv;
-	printf("%d/n", argc - 1);
+	int a = 0, j;
+	
+	while (a < argc)
+	{
+		j = a;
+		a++;
+	}
+	printf("%d\n", j);
 	return (0);
 }
